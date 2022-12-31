@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html    xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>ASOF Energy</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=100%, initial-scale=1"> 
+    <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body class="text-reset ">
+	<div style="background-image: url(images/solar3.jpg);" class="container-fluid" align="center">
+		<div style="padding-top: 20px; ">
+			<h1><a href="about.html" style="text-decoration: none; color: blue;"><b>ASOF SOLAR</b></a></h1>
+		</div>
+		<div style="padding: 0px 0px 20px 0px;margin: 0px; ">
+			<b><i>...Making Life more Comfortable.</i></b>
+		</div>
+		
+		
+		
+	</div>
+	<nav class="navbar navbar-expand-sm  navbar-dark sticky-top" style="background-color: rgb(64, 64, 64);">
+		<a class="navbar-brand" href="about.html"><b>ASOF Solar</b></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		   	<span class="navbar-toggler-icon"></span>
+		</button>
+ 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="index.html">Home</a></li>
+				
+				<li class="nav-item dropdown active">
+					<a  href="store.html">Our Store <span class='fas fa-angle-down'></span></a>
+					<div class="dropdown-content" style="font-size: 13px;">
+							<a href="solar_panels.html">Solar Panels</a>
+						    <a href="inverters.html">Inverters</a>
+						    <a href="batteries.html">Batteries</a>
+						    <a href="other_appliances.html">Other Products</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="Services.html">Our Services <span class='fas fa-angle-down'></span></a>
+					<div class="dropdown-content" style="font-size: 13px;">
+							<a href="Services.html#Consultation">Consultation</a>
+						    <a href="Services.html#Installation">Installation</a>
+						    <a href="Services.html#Maintenance">Maintenance and Repairs</a>
+					</div>
+				</li>
+				<li class="nav-item"><a href="#">Our Academy</a></li>
+				<li class="nav-item"><a href="projects.html">Our Projects</a></li>
+			</ul> 
+			
+		</div>
+	  	<div >
+			
+			<div id="svglinks">
+				<div class="search-container" >
+					​<form action="/action_page.php">
+					    <input type="text" placeholder="Search.." name="search">
+					    <button type="submit"><i class="fa fa-search"></i></button>
+				    </form>
+			    
+					
+				</div>
+				<div><a href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M22.814 9.031h-1.95c-1 0-1.185-.764-1.185-1.707.001-4.045-3.272-7.324-7.308-7.324h-5.062c-4.037 0-7.309 3.279-7.309 7.324v9.352c0 4.045 3.272 7.324 7.309 7.324h9.383c4.036 0 7.308-3.279 7.308-7.324v-6.457c0-.657-.531-1.188-1.186-1.188zm-15.428-3.031h4.229c.765 0 1.385.671 1.385 1.5s-.62 1.5-1.386 1.5h-4.228c-.766 0-1.386-.671-1.386-1.5s.62-1.5 1.386-1.5zm9.134 12h-9.04c-.817 0-1.48-.672-1.48-1.5 0-.83.663-1.5 1.48-1.5h9.039c.817 0 1.48.67 1.48 1.5.001.828-.662 1.5-1.479 1.5z"></a></div>
+				<div><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M23 18h-2v2h-1v-2h-2v-1h2v-2h1v2h2v1zm-15.999-10c-2.493 0-4.227 2.383-1.866 6.839.774 1.464-.826 1.812-2.545 2.209-1.491.345-1.59 1.072-1.59 2.334l.002.618h1.329c0-1.918-.186-1.385 1.824-1.973 1.014-.295 1.91-.723 2.316-1.612.212-.463.355-1.22-.162-2.197-.952-1.798-1.219-3.374-.712-4.215.547-.909 2.27-.908 2.819.015.935 1.567-.793 3.982-1.02 4.982h1.396c.44-1 1.206-2.208 1.206-3.9.001-2.01-1.31-3.1-2.997-3.1zm7.754-1.556c.895-1.487 3.609-1.494 4.512.022.77 1.291.423 3.484-.949 6.017-.098.18-.17.351-.232.517h1.464c3.057-5.744.816-9-2.548-9-3.323 0-5.635 3.177-2.488 9.119 1.033 1.952-1.101 2.416-3.394 2.946-1.988.458-2.12 1.429-2.12 3.11l.003.825h1.331c0-2.069-.08-2.367 1.173-2.657 1.918-.442 3.729-.86 4.39-2.305.241-.527.401-1.397-.206-2.543-1.362-2.572-1.704-4.777-.936-6.051z"/></a></div>
+				<div><a href="cart.html"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm-10.563-5l-2.937-7h16.812l-1.977 7h-11.898zm11.233-5h-11.162l1.259 3h9.056l.847-3zm5.635-5l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></a></div>
+			</div>
+		</div>	
+	</nav>
+	
+		<content>
+		
+	 <h1> Welcome Admin </h1>
+		
+			<a href="/proadmin">Create new Product</a>
+			<br/>
+			<a href="/index2">update, view and delete products</a>
+			
+			  <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+
+
+	</content>
+	<footer style="  border: 1px solid rgb(64,64,64);padding-bottom: 0px;background-color:rgb(164,164,164); ">
+		<div style="" class="container-fluid" align="center">
+			<div style="padding-top: 20px; ">
+				<h1><a href="about.html" style="text-decoration: none; color: blue;"><b>ASOF SOLAR</b></a></h1>
+			</div>
+		 	
+		 	
+		</div>
+		<div class="row" style="padding: 20px;background-color: rgb(38,38,38); color: rgb(242,242,242);">
+			<div class="col">
+				<h5> Products</h5>
+				<ul >
+					<li><small><a style="color: rgb(242,242,242);" href>Solar Panels</a></small></li>
+					<li><small><a style="color: rgb(242,242,242);" href>Inverters</a></small></li>
+					<li><small><a style="color: rgb(242,242,242);" href>Batteries</a></small></li>
+					<li><small><a style="color: rgb(242,242,242);" href>Stabilizers</a></small></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h5> Customer Support</h5>
+				<ul>
+					<li><small><a style="color: rgb(242,242,242);" href="">Help</a></small></li>
+					<li><small><a style="color: rgb(242,242,242);" href="contact.html">Contact Us</a></small></li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<h5> About ASOF</h5>
+				<ul>
+					<li><small><a style="color: rgb(242,242,242);" href>Our Goal</a></small></li>
+					<li><small><a style="color: rgb(242,242,242);" href>Our Team</a></small></li>
+					<li><small><a style="color: rgb(242,242,242);" href>Our Branches</a></small></li>
+					<li><small><a style="color: rgb(242,242,242);" href="">Our Store</a></small></li>
+
+				</ul>
+			</div>
+			<div class="col">
+				<h5> Hotlines</h5>
+				<ul style="padding-bottom: 10px">
+					<li><small><p><b>Ibadan Branch:</b>+2348000000000</p></small></li>
+					<li><small><p><b>Abeokuta Branch:</b>+2348000000000</p></small></li>
+					<li><small><p><b>Ikeja Branch:</b>+2348000000000</p></small></li>
+					<li><small><p><b>Ile-Ife Branch:</b>+2348000000000</p></small></li>
+					<li><small><p><b>Mabgoro Branch:</b>+2348000000000</p></small></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h5> Subscribe</h5>
+				<form>
+					<p><b>JOIN US</b> now to get Latest Products News</p>
+					<input type="text" placeholder="johndoe@gmail.com" name="email">
+				</form>
+			</div>
+		</div>
+		
+	</footer>
+</body>
+</html>

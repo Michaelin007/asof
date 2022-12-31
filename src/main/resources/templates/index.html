@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bott.css" rel="stylesheet">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+<!-- link rel="script" href="/js/nutri.js"/-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<title>Smile Holly </title>
+
+<style>
+
+</style>
+</head>
+<body>
+  <div id="bab" th:replace="layoutt :: site-header"></div>
+  <main>
+    <div id="intro" class="p-5 text-center bg-image shadow-1-strong"
+      style="background-image: url('https://imgur.com/IHAW8qp.png'), background-size: cover, background-repeat: no-repeat;">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white px-4">
+            <h1 class="mb-3">Smile Holly Enterprise</h1>
+
+            <!-- Time Counter -->
+            <h3 id="time-counter" class="border border-light my-4 p-4"></h3>
+
+            <p class="lead">Buy UK used and Accessories at a very cheap rate</p>
+            <a class="btn btn-outline-light btn-lg m-2" href="/store-x" role="button"
+              >Store</a>
+            <a class="btn btn-outline-light btn-lg m-2"href="/store-x" 
+              role="button">Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Stores</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <div>
+            <h2>Laptop Store</h2>
+            <p></p>
+            <a href="/store-x" class="btn btn-primary">
+             View
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+          </div>
+          <div>
+            <h2>Accessories</h2>
+            <p></p>
+            <a href="/store-x" class="btn btn-primary">
+              View
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+          </div>
+          <div>
+            <h2>Landed Properties</h2>
+            <p>Landed Properties </p>
+            <a href="/store-x" class="btn btn-primary">
+              View
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</main>
+   
+    
+
+                     
+                    
+    
+        <div id="fot" th:replace="layoutt :: site-footer"></div>
+		
+		
+
+</body>
+</html>

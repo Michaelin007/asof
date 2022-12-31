@@ -1,0 +1,116 @@
+body{
+    /* margin: 0; */
+    /* padding: 0; */
+    background-image: url("images/solar6.jpg");
+    background-size: cover;
+    
+    
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background-repeat: no-repeat;
+}
+    
+.loginbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:40%
+    height: 80%;
+    padding: 10px 40px;
+    background-color:rgba(0, 0, 0,0.5);
+    border-radius: 2%;
+}
+.loginbox_s{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 80%;
+    padding: 10px 40px;
+    background-color:rgba(0, 0, 0,0.5);
+    border-radius: 2%;
+}
+h1 {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: rgb(130, 56, 37);
+    text-align: center;
+}
+
+.loginbox input,.loginbox_s input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox:hover,.loginbox_s:hover{
+    background-color: rgb(160, 160, 160,0.5);
+}
+
+.loginbox input[type="text"],.loginbox_s input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: rgb(1, 1, 1);
+    font-size: 16px;
+} 
+.loginbox input[type="text"]:hover,.loginbox input[type="password"]:hover,.loginbox_s input[type="text"]:hover,.loginbox_s input[type="password"]:hover {
+    
+    background-color: rgb(400, 400, 400,0.4);
+}
+.loginbox input[type="password"],.loginbox_s input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(10, 248, 89);
+    font-size: 16px;
+}
+
+::placeholder{
+    color: rgb(50, 77, 92);
+    font-size: 12px;
+}
+
+.loginbox input[type="submit"],.loginbox_s input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: rgba(255, 16, 235, 0.6);    
+    cursor: pointer;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover,.loginbox_s input[type="submit"]:hover {
+    background-color:rgb(75, 6, 84);
+    color: rgb(247, 23, 7);
+    text-transform: uppercase;
+    
+    
+}
+#options {
+    display: inline-block;
+}
+
+.loginbox a ,.loginbox_s a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.a1 {
+    float: left;
+}
+.a2 {
+    float: right;
+}
+
+
+.loginbox a:hover ,.loginbox_s a:hover{
+    color: rgb(25, 25, 139,0.4);
+}

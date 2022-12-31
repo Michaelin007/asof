@@ -1,0 +1,115 @@
+
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 17em;
+  padding-top: 140px;
+}
+
+.search {
+  width: 100%;
+  position: static;
+  float: none;
+}
+
+.searchTerm {
+  -webkit-font-smoothing: antialiased;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  width: 75%;
+  border: 1px solid #e4e4e4;
+  padding: 5px;
+  height: 33px;
+  border-radius: 1px;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.searchTerm:hover {
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.08), 0 8px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: #efefef;
+  border: none;
+  color: #454545;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #e7e7e7;
+  font-size: 14px;
+  height: 35px;
+  padding: 0 20px;
+  margin-right: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+button:hover {
+  border: 1px solid #acacac;
+  color: black;
+}
+.result {
+	margin-top: 25px;
+}
+
+.result a:first-child {
+	font-size: 18px;
+	text-decoration: none;
+	color: #1A0DAB;
+}
+
+.result a:first-child:visited {
+	color: #660099;
+}
+
+.result a:first-child:hover {
+	text-decoration: underline;
+}
+
+.result p:nth-child(2) { /*link*/
+	display: inline-block;
+	color: #006621;
+	font-size: 14px;
+}
+
+.result a:nth-child(3) { /*website title*/
+	display: inline-block;
+	text-decoration: none;
+	color: #777777;
+}
+
+.result a:nth-child(3):hover {
+	color: black;
+}
+
+.result p {
+	margin: 2px;
+}
+
+.result:nth-child(12) {
+	padding-bottom: 18px;
+	border-bottom: 1px solid #E4E4E4;
+}
+
+.result:nth-child(6) p:nth-child(2) { /*special case for 4th result as link displays inline with short title */
+	display: block;
+	/*margin-bottom: -13px;*/
+}
+
+.result:nth-child(6) p:nth-child(4) { /*fix line spacing for above special case */
+	margin-top: -13px;
+}
+

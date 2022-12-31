@@ -1,0 +1,28 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto:wght@300&display=swap");
+ 
+ 
+ *{
+	box-sizing:border-box;
+}
+    
+    
+ body {
+ 
+  padding-top: 4.5rem;
+  
+  
+}
+.bg-purple { background-color: #6f42c1; }
+
+.po{
+	
+	text-align:center;
+	
+}
+section{
+	font-family: 'Open Sans', sans-serif !important;
+}
+.ht{
+	font-family: 'Open Sans', sans-serif !important;
+}

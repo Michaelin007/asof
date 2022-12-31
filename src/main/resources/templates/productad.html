@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+
+
+<link rel="stylesheet" href="/css/mike.css" type="text/css"/>
+<!-- link rel="script" href="/js/nutri.js"/-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<title>ASOLAF Energy</title>
+<meta name="description" content="nutrisoft is a web app that includes nutrition calculators,ask a clinical nutritionist service, blog, opencourse ware and biochemical values"></meta>
+<script src="/css/script.js" defer> </script>
+</head>
+<body>
+
+        <div id="header">
+        <!--  span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"/>
+        </span-->
+          <a href="/"> <img src="/images/bloglogo2.png" id="logo"/></a>
+		    <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          </a>
+		  <div class="mynav">
+             <ul class="main-nav" id="js-menu">
+                    
+					
+                     <li><a href="/" class="nav-links">Home</a></li>
+                      <li><a href="/store-x" class="nav-links">Store</a></li>
+                       <li><a href="/" class="nav-links">Contact</a></li>
+                    
+                    
+                 </ul>                
+       </div>
+        </div>
+        <div id="main-content">
+            <div id="side-1">
+                
+            </div>
+           
+            <div id="side-2">
+            
+               <div class="heading">ASOLAF PRODUCT POSTING (ADMIN)<H1 style="text-align:center"> </H1> </div>
+              <div th:if="${param.success}">
+					<div class="alert alert-info">Successfully Posted</div>
+				</div>
+              <!-- article th:each="ask2:${ask2}">
+              <div class="qus">
+               
+                 <p th:text="${ask2.name}"/>
+                 
+                  
+                  </div>
+                
+              
+              </article-->
+               <div>&nbsp;</div>
+               <div>
+               <form  th:object="${product}" th:action="@{/admin-product}" action="#" method="post" enctype="multipart/form-data">
+               <div class="input-cnt">
+               <i class="material-icons">Product Name</i>
+               <input type="text" th:field="*{pname}"/>
+               <span class="err" th:if="${#fields.hasErrors('pname')}" th:errors="*{pname}">Product Name Error</span>
+                            
+               </div>
+              <div class="input-cnt">
+               <i class="material-icons">Product Price</i>
+               <input type="text" th:field="*{price}"/>
+               <span class="err" th:if="${#fields.hasErrors('price')}" th:errors="*{price}">Price Error</span>
+                            
+                </div>
+                <div class="input-cnt">
+               <i class="material-icons">Product Description</i>
+               <input type="text" th:field="*{pdescrip}"/>
+               </div>
+               
+               <div class="input-cnt">
+               <i class="material-icons">Product Price</i>
+               <input type="text" th:field="*{purl}"/>
+               <span class="err" th:if="${#fields.hasErrors('purl')}" th:errors="*{purl}">Price Error</span>
+                            
+                </div>
+               
+               
+               <input type="submit" value="Register"/>
+               </div>
+               </form>
+                
+             
+			</div>
+		</div>
+              
+            </div>
+            <div id="side-3">
+                
+            </div>
+        
+  <div id="footer">
+           <div class="contact">
+               
+               <p style="font-size: 15px;"><b>Contacts</b></p>
+                    
+                    <p style="font-size: 12px; font-family: Time New Romans;">Email:</p>
+                    <p style="font-size: 12px; font-family: Time New Romans;"> Address:</p>
+                <p style="font-size: 12px; font-family: Time New Romans;"> Telephone: </p>
+                
+            </div>
+            <div class="reso">
+                   <p style="font-size: 15px;"><b>Resources</b></p>
+                   
+                   <p style="font-size: 12px; font-family: Time New Romans;"  ><a href="" class="ree" style="text-decoration: none; color:whitesmoke;">Our Team</a></p>
+                   <p style="font-size: 12px; font-family: Time New Romans;" ><a href="" class="ree" style="text-decoration: none; color: white;">Privacy Policy</a></p>
+                   <p style="font-size: 12px; font-family: Time New Romans;" ><a href="" class="ree" style="text-decoration: none; color: white;">Terms of Service</a></p> 
+					<p style="font-size:10px;">  </p>
+                </div>
+             <div class="abouti">
+                 <p style="font-size: 15px;"><b>About</b></p>
+                   
+                   <a href="/"> <img src="/images/bloglogo2.png" id="logo"/></a>
+                   <p style="font-size: 12px; font-family: Time New Romans;"  ></p> 
+					
+                </div>
+            
+        </div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+ <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+<link rel="stylesheet" href="/css/mike.css" type="text/css"/>
+<!-- link rel="script" href="/js/nutri.js"/-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<title>ASOLAF Energy Store</title>
+
+<script src="/css/script.js" defer> </script>
+</head>
+<body>
+
+        <div id="header">
+        <!--  span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"/>
+        </span-->
+          <a href="/"> <img src="/images/log.jpg" id="logo"/></a>
+		    <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          </a>
+		  <div class="mynav">
+             <ul class="main-nav" id="js-menu">
+                    
+					
+                     <li><a href="/" class="nav-links">Home</a></li>
+                      <li><a href="/store-x" class="nav-links">Store</a></li>
+                       <li><a href="/" class="nav-links">Contact</a></li>
+                    
+                    
+                 </ul>                
+       </div>
+        </div>
+<div id="cont1">
+
+               </div>
+<div class="wrapper" >
+<h1 style="text-align:center;">Shop Now</h1>
+<form th:action="@{/store-x}">
+               <span style="font-weight:bolder;color:black;">Search:</span> <input placeholder="articles & cases" class="yupo"type="text" name="keyword" th:value="${keyword}"  />
+               &nbsp;
+               <input type="submit" value="Search"/>
+                &nbsp;
+               
+               </form>
+  <div class="cards_wrap" >
+    <div class="card_item" th:each="product:${product}" >
+      <div class="card_inner">
+        <div class="card_top">
+         <img th:src="@{${product.purl}}"/> 
+        </div>
+        <div class="card_bottom">
+          <div class="card_category">
+             <span th:text="${product.pname}"></span>
+          </div>
+            <div class="price">
+           <span th:text="${product.price}"></span>
+            </div>
+          <div class="card_info">
+              <label class="title"><b>Order Now</b></label>
+            
+           
+          </div>
+            <div class="store">
+                
+                <!-- li>Baby's Shop Nigeria</li>
+                <li>Konga</li>
+                <li>Jumia</li-->
+            
+            </div>
+                 
+          <div class="card_creator">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+		</div>
+		<div class="opo">
+				<div  style="font-size:13px;" class="oo">
+             Total Posts: [[${totalItems}]] - Page [[${currentPages}]] of [[${totalpages}]]
+             
+             </div>
+			 
+			  <div class="oo">
+             <a style="font-size:13px;" th:if="${currentPages > 1}" th:href="@{/store/1}">First</a>
+              <span style="font-size:13px;" th:unless="${currentPages > 1}">First</span>
+              
+              </div>
+			   <div class="oo">
+              <a style="font-size:13px;" th:if="${currentPages > 1}" th:href="@{'/store/' + ${currentPages - 1}}">Previous</a>
+              <span style="font-size:13px;" th:unless="${currentPages > 1}">Previous</span>
+             
+              </div>
+			   <div class="oo">
+             
+              <a style="font-size:13px;" th:if="${currentPages < totalpages}" th:href="@{'/store/' + ${currentPages + 1}}">Next</a>
+              <span style="font-size:13px;" th:unless="${currentPages < totalpages}">Next</span>
+             
+              </div>
+               <div class="oo">
+              
+               <a style="font-size:13px;" th:if="${currentPages < totalpages}" th:href="@{'/store/' + ${totalpages}}">Last</a>
+              <span style="font-size:13px;" th:unless="${currentPages < totalpages}">Last</span>
+              
+             </div>
+			 </div>
+		</div>
+		
+       
+       
+         
+           
+                    
+                    
+   
+       <div id="footer">
+           <div class="contact">
+               
+               <p style="font-size: 15px;"><b>Contacts</b></p>
+                    
+                    <p style="font-size: 12px; font-family: Time New Romans;">Email:</p>
+                    <p style="font-size: 12px; font-family: Time New Romans;"> Address:</p>
+                <p style="font-size: 12px; font-family: Time New Romans;"> Telephone: </p>
+                
+            </div>
+            <div class="reso">
+                   <p style="font-size: 15px;"><b>Resources</b></p>
+                   
+                   <p style="font-size: 12px; font-family: Time New Romans;"  ><a href="" class="ree" style="text-decoration: none; color:whitesmoke;">Our Team</a></p>
+                   <p style="font-size: 12px; font-family: Time New Romans;" ><a href="" class="ree" style="text-decoration: none; color: white;">Privacy Policy</a></p>
+                   <p style="font-size: 12px; font-family: Time New Romans;" ><a href="" class="ree" style="text-decoration: none; color: white;">Terms of Service</a></p> 
+					<p style="font-size:10px;">  </p>
+                </div>
+             <div class="abouti">
+                 <p style="font-size: 15px;"><b>About</b></p>
+                   
+                   <a href="/"> <img src="/images/log.jpg" id="logo"/></a>
+                   <p style="font-size: 12px; font-family: Time New Romans;"  ></p> 
+					
+                </div>
+            
+        </div>
+
+
+</body>
+</html>
+
